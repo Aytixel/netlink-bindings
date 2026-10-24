@@ -2,8 +2,8 @@
 name = "netlink-bindings"
 description = "Type-safe Rust bindings for Netlink generated from YAML specifications"
 version.workspace = true
-authors = [ "Remy D. Farley <one-d-wide@protonmail.com>" ]
-categories = [ "network-programming", "os", "api-bindings" ]
+authors = ["Remy D. Farley <one-d-wide@protonmail.com>"]
+categories = ["network-programming", "os", "api-bindings"]
 repository = "https://github.com/one-d-wide/netlink-bindings"
 license = "MIT OR Apache-2.0"
 edition = "2021"
@@ -13,7 +13,7 @@ all-features = true
 
 [[example]]
 name = "wireguard"
-required-features = [ "wireguard", "nlctrl" ]
+required-features = ["wireguard", "nlctrl"]
 
 [dev-dependencies]
 libc = "0.2"
@@ -49,6 +49,7 @@ psp = []
 rt-addr = []
 rt-link = []
 rt-neigh = []
+rt-nexthop = []
 rt-route = []
 rt-rule = []
 sunrpc = []
@@ -59,39 +60,40 @@ unix-diag = []
 wireguard = []
 
 all-subsystems = [
-  "binder",
-  "conntrack",
-  "dev-energymodel",
-  "devlink",
-  "dpll",
-  "drm-ras",
-  "ethtool",
-  "fou",
-  "handshake",
-  "inet-diag",
-  "lockd",
-  "mptcp_pm",
-  "netdev",
-  "net-shaper",
-  "nfsd",
-  "nftables",
-  "nl80211",
-  "nlctrl",
-  "ovpn",
-  "ovs_datapath",
-  "ovs_flow",
-  "ovs_packet",
-  "ovs_vport",
-  "psp",
-  "rt-addr",
-  "rt-link",
-  "rt-neigh",
-  "rt-route",
-  "rt-rule",
-  "sunrpc",
-  "tc",
-  "tcp_metrics",
-  "team",
-  "unix-diag",
-  "wireguard",
+    "binder",
+    "conntrack",
+    "dev-energymodel",
+    "devlink",
+    "dpll",
+    "drm-ras",
+    "ethtool",
+    "fou",
+    "handshake",
+    "inet-diag",
+    "lockd",
+    "mptcp_pm",
+    "netdev",
+    "net-shaper",
+    "nfsd",
+    "nftables",
+    "nl80211",
+    "nlctrl",
+    "ovpn",
+    "ovs_datapath",
+    "ovs_flow",
+    "ovs_packet",
+    "ovs_vport",
+    "psp",
+    "rt-addr",
+    "rt-link",
+    "rt-neigh",
+    "rt-nexthop",
+    "rt-route",
+    "rt-rule",
+    "sunrpc",
+    "tc",
+    "tcp_metrics",
+    "team",
+    "unix-diag",
+    "wireguard",
 ]
